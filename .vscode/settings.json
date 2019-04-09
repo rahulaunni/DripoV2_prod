@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/ksumsb3pro37/.platformio/penv/bin:/Users/ksumsb3pro37/.platformio/penv:/Users/ksumsb3pro37/Library/Android/sdk/platform-tools:/Users/ksumsb3pro37/Library/Android/sdk/tools:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/ksumsb3pro37/.nexustools:/Users/ksumsb3pro37/.nexustools:/Applications/The Whitecat Create Agent:/Applications/Zerynth Studio.app/Contents/Resources/app.nw/ztc/mac:/Applications/Zerynth Studio.app/Contents/Resources/app.nw/ztc/mac",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}
