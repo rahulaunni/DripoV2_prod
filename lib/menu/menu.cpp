@@ -9,7 +9,7 @@ Menu::Menu(){}
 Menu::~Menu(){}
 
 //function to initialize menu
-void Menu::init(Oled gOled,bool backEnable,char title[],char items[][10],int n){
+void Menu::init(bool backEnable,char title[],char items[][10],int n){
     title = title;
     if(backEnable == true){
         menuItems[0] = "<<back";
@@ -93,27 +93,21 @@ void Menu::displayMenu(Oled gOled,int n,char title[20]){
 
 
 }
-void Menu::selector(Oled gOled){
-   // gOled.drawBox(0,state*10,64,20);
-}
+
 char* Menu::getSelect(){
-    return menuItems[0];
+    return menuItems[state];
 }
-void Menu::up(Oled gOled){
+void Menu::up(){
     if(state <(number-1)){
         state++;
         printf("%d\n",state);
-        //gOled.eraseBox(0,((state-1)*20),64,20);
-        //gOled.drawBox(0,state*20,64,20);
 
     }
 }
 
-void Menu::down(Oled gOled){
+void Menu::down(){
     if(state >0){
         state--;
         printf("%d\n",state);
-        //gOled.eraseBox(0,((state+1)*20),64,20);
-        //gOled.drawBox(0,state*20,64,20);
     }
 }

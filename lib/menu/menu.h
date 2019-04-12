@@ -17,11 +17,10 @@ class Menu
     explicit Menu(Oled gOled);
     Menu();
     ~Menu();
-    void init(Oled gOled,bool,char[],char [][10],int);
+    void init(bool,char[],char [][10],int);
     void displayMenu(Oled gOled,int,char[]);
-    void selector(Oled gOled);
-    void up(Oled gOled);
-    void down(Oled gOled);
+    void up();
+    void down();
     char * getSelect();
 };
 
